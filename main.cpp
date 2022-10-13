@@ -1,3 +1,9 @@
+#include "matplotlibcpp.h"
+namespace plt = matplotlibcpp;
+int main() {
+    plt::plot({1,3,2,4});
+    plt::show();
+}
 std::vector<std::vector<float>> Read_Iris_Dataset(void)
 {
    std::ifstream myfile("iris.data");
